@@ -1,2 +1,13 @@
-# smart-contracts
- EOS smart contracts.
+
+
+# **알리바이**
+ 백석대학교 블록체인 링크플러스 캡스톤 1팀에서 진행하는 **아르바이트 경력 증명 플랫폼**인 **'알리바이'** 관련 코드들입니다.
+
+
+
+
+
+
+
+
+contact : dbadoy4874@gmail.com
