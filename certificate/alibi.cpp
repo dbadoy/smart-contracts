@@ -57,12 +57,12 @@ class [[eosio::contract("alibi")]] alibi : public eosio::contract {
          } else { 
                auto iterator = me.find(user.value);
                if(iterator != me.end()){
-                 me.modify(iterator, user, [&]( auto& row ) { // contract - 2
-                     for(int i = 0; i < row.my_certifi.size(); i++){ // weak
+                 me.modify(iterator, user, [&]( auto& row ) { 
+                     for(int i = 0; i < row.my_certifi.size(); i++){ 
                         if(row.my_certifi[i].store_name == store_name){
                             row.my_certifi[i].retire_day = retire_day;
                             row.my_certifi[i].working_day =  row.my_certifi[i].start_day + " ~ " + row.my_certifi[i].retire_day;
-                            if(row.my_certifi[i].retire_day != row.my_certifi[i].end_day){// contract - 3
+                            if(row.my_certifi[i].retire_day != row.my_certifi[i].end_day){
                                   row.my_certifi[i].claim_contents.push_back(failureMessage);
                             }                       
                         }       
@@ -117,15 +117,6 @@ class [[eosio::contract("alibi")]] alibi : public eosio::contract {
       [[eosio::action]]
       void issuance(name searcher, name user, string store_name) {
          require_auth(searcher);
-         //eosio::token::transfer(searcher, "alibitoken12", "5.0000 ALB", "issuance fee.");
-         //action transf = action(
-         //permission_level{searcher, "active"_n},
-         //"seungbaenote"_n,
-         //"transfer"_n,
-         //std::make_tuple(searcher, "seungbaenote"_n, "1.0000 EOS", string("memo~")));
-         //transf.send(); 
-         //asset(1000, symbol("EOS", 1))
-         // issuance - 2
          auto permis_flag = 0;
          auto count = 0;
 
@@ -136,7 +127,6 @@ class [[eosio::contract("alibi")]] alibi : public eosio::contract {
 
                    auto itr = find(row.my_accs.begin(), row.my_accs.end(), searcher);
                    if( itr == row.my_accs.end() ){ permis_flag = 1;} 
-
 
                    if(permis_flag == 0){
                    for(int i = 0; i < row.my_certifi.size(); i++){ 
