@@ -1,9 +1,9 @@
 table
 -------------
 > struct
->   >struct [[eosio::table]] doc {
-			name key;
-			uint64_t certificount;
+>   >	struct [[eosio::table]] doc {
+				name key;
+				uint64_t certificount;
 
 			std::vector<userlist> users;
 			
