@@ -40,6 +40,7 @@ cstm(유저)의 tmpCertifi입력<br>
 	2. user 테이블에 cstm이 존재하지 않을 경우, cstm을 등록해준 후 tmpCertifi를 추가한다.
 	3. user 테이블에 cstm이 존재할 경우, 입력 받은 tmpCertifi를 추가한다.
 	
+<br><br><br>
 checkinghash
 ------------
 ### void checkinghash(name user, int certifinum,std::string certifi)
@@ -51,6 +52,7 @@ user 테이블에 certifinum 을 찾아 certifi와 해시값 비교
 	3. certifinum이 존재하지 않을 시, "Non-exsist certification" 
 
 
+<br><br><br>
 Jungle3 - contract name
 =======
 yuseungbae12
