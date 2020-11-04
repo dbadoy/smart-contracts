@@ -1,4 +1,4 @@
-table
+Table info
 -------------
 > table
 
@@ -28,10 +28,11 @@ table
 
 
 
-certificate data
+Actions
 -------------
-certifinum, certificate_hash 으로 구성<br>
--> certifinum은 key 계정에서 카운트하며 할당 해주어서 색인에 사용<br>
+upsert
+==============
+
 
 
 
