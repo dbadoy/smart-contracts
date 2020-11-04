@@ -41,6 +41,7 @@ cstm(유저)의 tmpCertifi입력<br>
 	3. user 테이블에 cstm이 존재할 경우, 입력 받은 tmpCertifi를 추가한다.
 	
 <br>
+
 checkinghash
 ------------
 ### void checkinghash(name user, int certifinum,std::string certifi)
