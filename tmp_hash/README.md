@@ -33,7 +33,11 @@ Actions
 1. upsert
 --------
 <h3>void upsert(name user, std::string cstm, std::string tmpCertifi)<h3><br>
-user의 계정에 cstm 유저와 그의 tmpCertifi를 입력 ( user 계정의 certificount를 참고하여 certifinum이 등록된다. )
+user 테이블에 cstm(유저)의 tmpCertifi 정보를 입력 
+1. cstm의 certifinum은 user에 certificount를 참고하여 지정된다.
+2. user 테이블에 cstm이 존재하지 않을 경우, cstm을 등록해준 후 tmpCertifi를 추가한다.
+3. user 테이블에 cstm이 존재할 경우, 입력 받은 tmpCertifi를 추가한다.  
+
 
 
 
