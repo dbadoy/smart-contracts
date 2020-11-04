@@ -1,5 +1,5 @@
 Table info
--------------
+==========
 > table
 
 	struct [[eosio::table]] doc {
@@ -29,9 +29,10 @@ Table info
 
 
 Actions
--------------
+=========
 upsert
-==============
+--------
+
 
 
 
