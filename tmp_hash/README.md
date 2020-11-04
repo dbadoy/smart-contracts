@@ -57,7 +57,7 @@ user 테이블에 certifinum 을 찾아 certifi와 해시값 비교
 Jungle3 - contract name
 =======
 ### yuseungbae12
-
+<br>
 보완사항
 ========
 	1. certification을 string으로 받고 있음
