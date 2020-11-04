@@ -1,6 +1,6 @@
 table
 -------------
-> struct
+> table
 
 	struct [[eosio::table]] doc {
 			name key;
@@ -12,10 +12,18 @@ table
 		};
 		
 > userlist
+	
 	struct userlist{
 			std::string name;
 			std::vector<userdata> data;
 
+		};
+		
+> userdata
+
+	struct userdata{
+			uint64_t certifinum;
+			checksum256 user_hash;
 		};
 
 
