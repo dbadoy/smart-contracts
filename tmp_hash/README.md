@@ -53,10 +53,10 @@ user 테이블에 certifinum 을 찾아 certifi와 해시값 비교
 	3. certifinum이 존재하지 않을 시, "Non-exsist certification" 
 
 
-<br><br><br>
+<br><br>
 Jungle3 - contract name
 =======
-yuseungbae12
+##yuseungbae12
 
 보완사항
 ========
