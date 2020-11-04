@@ -55,5 +55,6 @@ user 테이블에 certifinum 을 찾아 certifi와 해시값 비교
 ========
 	1. certification을 string으로 받고 있음
 	2. 추가해야 할 액션
+	3. 코드 주석 처리
 	
 
