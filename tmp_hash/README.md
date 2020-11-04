@@ -32,7 +32,7 @@ Actions
 =========
 1. upsert
 --------
-> void upsert(name user, std::string cstm, std::string tmpCertifi)
+<h2>void upsert(name user, std::string cstm, std::string tmpCertifi)<br><h2>
 user의 계정에 cstm 유저와 그의 tmpCertifi를 입력 ( user 계정의 certificount를 참고하여 certifinum이 등록된다. )
 
 
