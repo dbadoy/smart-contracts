@@ -30,8 +30,7 @@ Table info
 
 Actions
 =========
-# upsert
-## void upsert(name user, std::string cstm, std::string tmpCertifi)
+### upsert | void upsert(name user, std::string cstm, std::string tmpCertifi) |
 
 user 테이블에 cstm(유저)의 tmpCertifi 정보를 입력<br><br>
 1. cstm의 certifinum은 user에 certificount를 참고하여 지정된다.<br>
