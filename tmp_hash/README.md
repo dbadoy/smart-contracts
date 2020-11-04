@@ -32,7 +32,7 @@ Actions
 =========
 upsert
 --------
-
+void upsert(name user, std::string cstm, std::string tmpCertifi)
 
 
 
