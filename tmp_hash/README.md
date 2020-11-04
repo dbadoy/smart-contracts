@@ -1,7 +1,8 @@
 table
 -------------
 > struct
-struct [[eosio::table]] doc {
+
+	struct [[eosio::table]] doc {
 			name key;
 			uint64_t certificount;
 
