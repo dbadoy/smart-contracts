@@ -61,8 +61,11 @@ Jungle3 - contract name
 
 보완사항
 ========
-	1. certification을 string으로 받고 있음
+	1. certification을 string으로 받고 있음  -> 실제로 넣어본 결과, certification 데이터를 JSON.parse , JSON.stringify 해준 후, toStiring('base64') 값을 넣으면 됨 ( nodejs - eosjs 환경 )
 	2. 추가해야 할 액션
 	3. 코드 주석 처리
+	
+
+	
 	
 
