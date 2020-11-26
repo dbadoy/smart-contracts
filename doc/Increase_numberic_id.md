@@ -1,4 +1,4 @@
-Table
+Table:
 ```
 struct [[eosio::table]] global {
 			global() {}
@@ -9,7 +9,7 @@ struct [[eosio::table]] global {
 		typedef eosio::singleton< "global"_n, global > conf; /// singleton
  ```
  
- Function
+Function:
  ```
  enum id_type { user_id };
  
@@ -34,13 +34,12 @@ struct [[eosio::table]] global {
 
  ```
  
- Use
+Use:
  ```
  uint64_t myId = getid( user_id );
  
  ```
-
-Include
+Include:
 ```
 #include <eosio/singleton.hpp>
 ```
