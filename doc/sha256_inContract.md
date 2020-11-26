@@ -1,9 +1,9 @@
-#Include:
+# Include:
 ```
 #include <eosio/crypto.hpp>
 ```
 
-#Use:
+# Use:
 ```
 std::string temp = "my temp string.";
 
