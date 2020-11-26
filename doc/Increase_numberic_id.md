@@ -1,4 +1,9 @@
-Table:
+## Include:
+```
+#include <eosio/singleton.hpp>
+```
+
+## Table:
 ```
 struct [[eosio::table]] global {
 			global() {}
@@ -9,7 +14,7 @@ struct [[eosio::table]] global {
 		typedef eosio::singleton< "global"_n, global > conf; /// singleton
  ```
  
-Function:
+## Function:
  ```
  enum id_type { user_id };
  
@@ -34,14 +39,11 @@ Function:
 
  ```
  
-Use:
+## Use:
  ```
  uint64_t myId = getid( user_id );
  
  ```
-Include:
-```
-#include <eosio/singleton.hpp>
-```
+
  
  
