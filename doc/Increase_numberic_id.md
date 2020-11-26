@@ -42,7 +42,7 @@ typedef eosio::singleton< "global"_n, global > conf; /// singleton
 ## Use:
  ```
  uint64_t myId = getid( user_id );
- 
+
  ```
 
  
