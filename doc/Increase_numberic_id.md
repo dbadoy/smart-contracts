@@ -48,5 +48,7 @@ typedef eosio::singleton< "global"_n, global > conf; /// singleton
  
 ## Reference:
 ```
-Cryptolions - SimpleAssets
+CryptoLions - SimpleAssets
+
+https://github.com/CryptoLions/SimpleAssets
 ```
