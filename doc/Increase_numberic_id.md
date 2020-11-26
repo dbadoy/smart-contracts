@@ -10,8 +10,8 @@ struct [[eosio::table]] global {
 			uint64_t myid = 100000000000000;
 
 			EOSLIB_SERIALIZE( global, ( myid ))
-		};
-		typedef eosio::singleton< "global"_n, global > conf; /// singleton
+};
+typedef eosio::singleton< "global"_n, global > conf; /// singleton
  ```
  
 ## Function:
