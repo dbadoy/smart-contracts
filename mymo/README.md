@@ -33,10 +33,10 @@ azdkeleizk12
 
 API - getmemo
 =========
-## Request
+### Request
 > yourAccount, publickey, privatekey
 
-## Response
+### Response
 ![2](https://user-images.githubusercontent.com/72970043/100400927-55a6f000-309b-11eb-9d8a-e9747c449fba.PNG)
 
 
