@@ -1,4 +1,4 @@
-MyMemo
+Mymo
 =======
 ### Put a note on the EOS blockchain.
 
