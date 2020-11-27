@@ -10,10 +10,8 @@ Check here : mymocontract
 
 https://jungle3.bloks.io/account/mymocontract
 
-Back-end
+API - getmemo
 =========
-> API - getmemo
-
 ## Request
 ![1](https://user-images.githubusercontent.com/72970043/100401024-a1f23000-309b-11eb-9e74-6f5082b31987.PNG)
 
