@@ -18,7 +18,7 @@ API - pushmemo
 > yourAccount, publickey, privatekey, yourmemo 
 
 ### Response
-Success or Error
+> Success or Error
 
 #### In blockchain ( example )
 ```
