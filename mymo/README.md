@@ -1,8 +1,10 @@
 Mymo
 =======
-### Put a note on the EOS blockchain.
+#### Put a note on the EOS blockchain.
 
-### The memo is encrypted with the user's public key.
+#### The memo is encrypted with the user's public key.
+
+
 
 Jungle3
 =====
@@ -12,13 +14,13 @@ https://jungle3.bloks.io/account/mymocontract
 
 API - pushmemo
 =========
-## Request
+### Request
 > yourAccount, publickey, privatekey, yourmemo 
 
-## Response
+### Response
 Success or Error
 
-### In blockchain ( example )
+#### In blockchain ( example )
 ```
 azdkeleizk12	
 [
@@ -39,9 +41,12 @@ API - getmemo
 
 
 
->Table
-  
->Action
+
+Smart contract
+=============
+> Table
+> Action
+
 
 
 
