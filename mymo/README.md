@@ -2,7 +2,7 @@ Mymo
 =======
 #### Put a note on the EOS blockchain.
 
-#### The memo is encrypted with the user's public key.
+#### The memo is encrypted with the user's public key( In nodejs ).
 
 
 
