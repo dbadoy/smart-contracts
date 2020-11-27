@@ -41,7 +41,7 @@ router.post("/inputmemo", async(req,resp) => {
 
         eos.transaction({
             actions: [{
-                account: "alibitest123",
+                account: "mymocontract",
                 name: "pushmemo",
                 data: {
                     user : yourAccount,
@@ -68,8 +68,8 @@ router.post('/getmemo', async(req, resp) => {
 
     let temp = []; let count = 0;
     eos.getTableRows({
-        code:"alibitest123",
-        scope: yourAccount,
+        code:"mymocontract",
+        scope: "mymocontract",
         table: 'mymemos',
         json: true,
     })
