@@ -12,9 +12,9 @@ https://jungle3.bloks.io/account/mymocontract
 
 API - getmemo
 ============
-Request - Account, publickey, privatekey 
-Response - Decrypt memo.
 
+![1](https://user-images.githubusercontent.com/72970043/100400912-5049a580-309b-11eb-9cdf-ba0e00b9d503.PNG)
+![2](https://user-images.githubusercontent.com/72970043/100400927-55a6f000-309b-11eb-9d8a-e9747c449fba.PNG)
 
 
 
