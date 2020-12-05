@@ -2,7 +2,7 @@
 
 Summary
 =======
-Storing photos using blockchain and IPFS ( IPFS can be replaced by NFT )
+### Storing photos using blockchain and IPFS ( IPFS can be replaced by NFT )
 
 
 Table
