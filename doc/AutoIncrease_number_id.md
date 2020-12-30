@@ -33,7 +33,7 @@ typedef eosio::singleton< "global"_n, global > conf; /// singleton
 		check(false, "Type error !" );
 	}
 
-	config.set( _cstate, _self );
+	config.set( _global, _self );
 	return result;
 }
 
