@@ -55,9 +55,6 @@ ACTION SimpleAssets::setcerthashd( name user, uint64_t certifinum, checksum256 c
 	string t = "NULL";
 	const checksum256 hash_null = sha256(t.data(), t.size());
 
-	//require_auth(user);
-	//print((certhashat.find(certifinum))->certifinum);
-
 	const auto itr = certhashd.find(certifinum);
 	if(itr == certhashd.end()){
 			if(retirementhash == hash_null){
@@ -115,10 +112,12 @@ ACTION SimpleAssets::setnfthash( name owner ,uint64_t nft_id, checksum256 nft_ha
 	sassets assets_f( _self, owner.value );
 	const auto itr = assets_f.find(nft_id);
 			if( itr == assets_f.end()){	
-				string tmp = string("Not Eexist NFT! and");
+				string tmp = string("Not Eexist NFT!");
 				check(false,  tmp);
 			}
 			else{
+			
+				// nfthasht == 'nfthas' table's multi index
 				auto itr = nfthasht.find(nft_id);
 				if( itr == nfthasht.end() ) {
 					nfthasht.emplace( _self, [&]( auto& r ) {
