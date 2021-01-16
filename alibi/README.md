@@ -28,7 +28,7 @@ TABLE certhashd {
 
 
 ### NFT's hash table
-ALIBI issues career certificates using NFT. When issued, it is a table that stores the hash value of the NFT.
+ALIBI issues career certificates using NFT. This is a table that stores the hash value of the issued NFT.
 
 > nfthash
 ```
@@ -41,6 +41,26 @@ ALIBI issues career certificates using NFT. When issued, it is a table that stor
 			}
 		};
 ```
+
+### Action
+There is two additional action.
+1. setcerthash - literaly, add in blockchain the document's hash value
+2. setnfthash - same ...
+
+> setcerthash
+```
+void setnfthash( name owner, uint64_t nft_id, checksum256 nft_hash);
+
+
+```
+
+> setnfthash
+```
+void setcerthashd( name user, uint64_t certifinum, checksum256 certifihash, checksum256 retirementhash, string sign);
+
+```
+
+
 
 
 
