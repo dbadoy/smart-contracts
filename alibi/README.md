@@ -49,14 +49,88 @@ There is two additional action.
 
 > setcerthash
 ```
-void setnfthash( name owner, uint64_t nft_id, checksum256 nft_hash);
+ACTION SimpleAssets::setcerthashd( name user, uint64_t certifinum, checksum256 certifihash, checksum256 retirementhash, string sign){
+	//new certification input == certifinum >> 0 
+	require_auth(user);
+	string t = "NULL";
+	const checksum256 hash_null = sha256(t.data(), t.size());
 
+	//require_auth(user);
+	//print((certhashat.find(certifinum))->certifinum);
+
+	const auto itr = certhashd.find(certifinum);
+	if(itr == certhashd.end()){
+			if(retirementhash == hash_null){
+				certhashd.emplace( _self, [&]( auto& r) {
+					r.certifinum = certifinum;	
+					r.status = 1;
+					r.certifihash = certifihash;
+					r.retirementhash = hash_null;	
+					r.usersign.push_back(sign);	
+					r.targetsign.push_back("init");
+					print(r.usersign[0]);
+				});
+				
+			} else { check(false, "No exist certification. You cannot enter retire day hash value.");}
+	}
+	else{
+		const auto itr = certhashd.find(certifinum);
+			if(retirementhash == hash_null){
+				certhashd.modify(itr, _self, [&]( auto& r) {
+					if(r.status != 1) { check(false, "already exist certification"); }
+					r.targetsign.pop_back();
+					r.targetsign.push_back(sign);
+					r.status = 2;
+				});
+
+			}
+			else{
+				certhashd.modify(itr, _self, [&]( auto& r) {
+					if(r.status == 1) { check(false, "Both signatures have not been entered."); }
+					if(r.status == 4) { check(false, "Completed certification"); }
+					if(r.status == 3){
+						r.targetsign.push_back(sign);
+						r.status = 4;
+					}	
+					
+					if(r.status == 2){
+						r.retirementhash = retirementhash;
+						r.usersign.push_back(sign);
+						r.status = 3;
+					}
+		
+				});
+			}
+			
+	}
+}
 
 ```
 
 > setnfthash
 ```
-void setcerthashd( name user, uint64_t certifinum, checksum256 certifihash, checksum256 retirementhash, string sign);
+ACTION SimpleAssets::setnfthash( name owner ,uint64_t nft_id, checksum256 nft_hash){
+	require_auth(owner);
+
+	sassets assets_f( _self, owner.value );
+	const auto itr = assets_f.find(nft_id);
+			if( itr == assets_f.end()){	
+				string tmp = string("Not Eexist NFT! and");
+				check(false,  tmp);
+			}
+			else{
+				auto itr = nfthasht.find(nft_id);
+				if( itr == nfthasht.end() ) {
+					nfthasht.emplace( _self, [&]( auto& r ) {
+						r.nft_id = nft_id;
+						r.nft_hash = nft_hash;
+					});
+				}
+				else{
+					check(false, "already exist...");
+				}
+			}
+}
 
 ```
 
