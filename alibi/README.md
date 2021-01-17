@@ -1,4 +1,9 @@
 
+This is the code that modified SimpleAssets.
+===
+https://github.com/CryptoLions/SimpleAssets
+
+
 Additional features
 ===
 ### Document's hash table
