@@ -3,7 +3,7 @@ Adoysign
 Adoysign is an electronic signature platform using blockchain (EOS).
 
 Example of use<br>
-kor. https://docs.google.com/presentation/d/1ibGdVajbw3LHLZprPly4GD8wpUS5Sc2-yeCGpwIklNs/edit#slide=id.p1<br>
+kor.  https://docs.google.com/presentation/d/1ibGdVajbw3LHLZprPly4GD8wpUS5Sc2-yeCGpwIklNs/edit#slide=id.p1<br>
 eng. https://docs.google.com/presentation/d/147edyvw5h-shBYbKVD6iBOT4OBy931kwdm2Vc11kKxE/edit#slide=id.p1<br>
 
 Feature
