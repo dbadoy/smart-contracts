@@ -6,7 +6,7 @@ Adoysign is an electronic signature platform using blockchain (EOS).
 
 > 2. Multiple people can sign the document without any special configuration. - Share the document and just wait for signature.
 
-> 3. All signing steps are stored on the blockchain and managed transparently. -  Only the hash value is stored, so you cannot see the actual data.
+> 3. All signing steps are stored on the blockchain and managed transparently. -  Only the hash value is stored, so others cannot see the actual data.
 
 
 
