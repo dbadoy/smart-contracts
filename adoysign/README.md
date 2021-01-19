@@ -32,30 +32,46 @@ The table is structured **signhash**, **dochash**, **Global**.<br>
 
 > signhash
 ```
-uint_64 signnum
-checksum256 signhashvalue
-bool use   // 'use' prevents reuse of signcode.
+struct [[eosio::table]] signhash {
+		uint64_t signnum;
+		checksum256 signhashvalue;
+		bool use; // use aodysign -> doc -> sign
+
+		uint64_t primary_key() const { return signnum; }
+	};
+	using sign_index = eosio::multi_index<"signs"_n, signhash>;
 ```
 > dochash
 ```
-uint_64 docnum
-checksum256 originhash // document's hash value
-vector <signer> signs // The storage vector of signature data for document
+struct [[eosio::table]] dochash {
+		uint64_t docnum;
+		checksum256 originhash; // document's hash value
+		std::vector<signcodeinfo> signs;  // The storage vector of signature data for document
+
+		uint64_t primary_key() const { return docnum; }
+	};
+	using doc_index = eosio::multi_index<"doc"_n, dochash>;
+
 
 // vector <signer> structured like this,
 struct signer {
-  name signer
-  uint64_t signnum
-  string signcode
-};
+  		name signer
+  		uint64_t signnum
+  		string signcode
+	};
 
 ```
   
 > Global  
 ```
-uint_64 signnum
-uint_64 docnum  
-// Auto increase
+struct [[eosio::table]] global {
+		global() {}
+		uint64_t signnum = 100000000000000;
+		uint64_t docnum = 200000000000000;
+
+		EOSLIB_SERIALIZE( global, ( signnum ) ( docnum ) )
+	};
+	typedef eosio::singleton< "global"_n, global > conf;
 ```
  
 ## Actions
