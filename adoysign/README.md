@@ -14,6 +14,8 @@ Feature
 
 Smart contract 
 =================
+doysign's smart contract 
+
 Account
 ----- 
 Jungle3 : adoycontract
