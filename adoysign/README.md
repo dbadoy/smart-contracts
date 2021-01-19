@@ -14,16 +14,21 @@ Feature
 
 Smart contract 
 =================
-doysign's smart contract 
-
+Adoysign's smart contract 
+<br>
 Account
 ----- 
 Jungle3 : adoycontract
 
 Link : https://jungle3.bloks.io/account/adoycontract
-
+<br>
 
 ## Tables
+The table is structured [signs], [doc], [Global].
+[signs] - This is the storage location of signCode.
+[doc] - This is the storage location of document's hash value and signature data
+[Global] - Automatic increment using sigleton.
+
 > signs
 ```
 uint_64 signnum
@@ -33,9 +38,10 @@ bool use   // 'use' prevents reuse of signcode.
 > doc
 ```
 uint_64 docnum
-checksum256 originhash
-vector <signer> signs
+checksum256 originhash // document's hash value
+vector <signer> signs // The storage vector of signature data for document
 
+// vector <signer> structured like this,
 struct signer {
   name signer
   uint64_t signnum
@@ -47,7 +53,8 @@ struct signer {
 > Global  
 ```
 uint_64 signnum
-uint_64 docnum   // Auto increase
+uint_64 docnum  
+// Auto increase
 ```
  
 ## Actions
