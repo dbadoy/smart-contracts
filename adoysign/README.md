@@ -2,6 +2,10 @@ Adoysign
 ========
 Adoysign is an electronic signature platform using blockchain (EOS).
 
+Example of use
+kor. https://docs.google.com/presentation/d/1ibGdVajbw3LHLZprPly4GD8wpUS5Sc2-yeCGpwIklNs/edit#slide=id.p1
+eng. https://docs.google.com/presentation/d/147edyvw5h-shBYbKVD6iBOT4OBy931kwdm2Vc11kKxE/edit#slide=id.p1
+
 Feature
 -----
 > 1. Decentralization of documents to be signed - Documents are stored in IPFS.
