@@ -14,7 +14,8 @@ Feature
 
 Smart contract 
 =================
-Adoysign's smart contract 
+Adoysign's smart contract.
+
 <br>
 Account
 ----- 
