@@ -10,7 +10,7 @@ Feature
 
 > 3. All signing steps are stored on the blockchain and managed transparently. -  Only the hash value is stored, so others cannot see the actual data.
 
-
+<br><br>
 
 Smart contract 
 =================
