@@ -39,7 +39,7 @@ The table is structured **signhash**, **dochash**, **Global**.<br>
 struct [[eosio::table]] signhash {
 		uint64_t signnum;
 		checksum256 signhashvalue;
-		bool use; // use aodysign -> doc -> sign
+		bool use;
 
 		uint64_t primary_key() const { return signnum; }
 	};
